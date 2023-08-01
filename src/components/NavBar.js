@@ -10,10 +10,23 @@ function NavBar() {
         marginBottom: "12px",
       }}
     >
-      <NavLink style={{ marginRight: "10px" }} to="/">
+      
+      <NavLink
+        exact
+        style={{ marginRight: "10px" }}
+        activeStyle={{ fontWeight: "bold" }}
+        to="/"
+      >
         Home
       </NavLink>
-      <NavLink style={{ marginRight: "10px" }} to="/movies">
+
+    
+      <NavLink
+        exact
+        style={{ marginRight: "10px" }}
+        activeStyle={{ fontWeight: "bold" }}
+        to="/movies"
+      >
         Movies
       </NavLink>
     </div>
